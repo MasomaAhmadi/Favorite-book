@@ -1,0 +1,16 @@
+{
+  "name": "third-try",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./input.css -o ./css/style.css ",
+    "watch": "tailwindcss -i ./input.css -o ./css/style.css --watch "
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "description": "",
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  }
+}

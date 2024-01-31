@@ -49,7 +49,6 @@ document.addEventListener("DOMContentLoaded", () => {
 	thinkBig.addEventListener("click", choose);
 
 	const colors = [
-		"bg-violet-500",
 		"#475569",
 		"#f97316",
 		"#fbbf24",
@@ -59,10 +58,14 @@ document.addEventListener("DOMContentLoaded", () => {
 		"#2563eb",
 		"#6d28d9",
 		"#e879f9",
-		];
-	main.addEventListener('click', () => {
-		for (i = 0; i < colors.length; i++){
-			body.style.backgroundColor = colors[i]
+	];
+
+	var i = 0;
+	body.addEventListener("click", () => {
+		body.style.backgroundColor = colors[i];
+		i++;
+		if (i == colors.length) {
+			i = 0;
 		}
-	})
+	});
 });
